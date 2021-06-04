@@ -1,0 +1,142 @@
+.encabezado {
+  background-color: orange;
+  color: white;
+  height: 35px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif; 
+}
+
+body {
+  overflow-x: hidden;
+  background-color: gray;
+}
+
+footer {
+  background-color: #e6e6e6;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+footer aside {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+main {
+  background-color: blue;
+}
+
+.container {
+  padding: 6px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedorTotal {
+  flex: 1;
+}
+
+.namepokemon {
+  display: flex;
+  background-color: honeydew;
+  width: 80%;
+  height: 20%;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon img {
+  width: 80%;
+  margin: 0 auto;
+}
+.pokemon {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.infoPokemon {
+  display: flex;
+  flex: 1;
+  background-color: white;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.item {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.otrosPokemones {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+}
+.otroPokemon {
+  flex-basis: 25%;
+}
+.otroPokemon img {
+  width: 100%;
+}
+
+.titulOtros {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.figureimg {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .encabezado {
+    display: flex;
+    justify-content: center;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+  }
+
+  footer aside {
+    flex-flow: column;
+  }
+
+  .otroPokemon {
+    flex-basis: 50%;
+  }
+  .otroPokemon figure {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
